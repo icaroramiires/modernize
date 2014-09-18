@@ -9,15 +9,6 @@
 <!--<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen"> -->
 <!--<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print"> -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<script language="JavaScript">
-function mostra(){
-if(window.onload ){
-    document.getElementById('lendo').style.display="none"
-    document.getElementById('conteudo').style.visibility="visible"
-}
-}
-    window.onload=mostra
-</script>
 <style>
 @import url(http://fonts.googleapis.com/css?family=Comfortaa);
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
@@ -70,63 +61,6 @@ body{
 }
 
 
-// loading 
-
-@keyframes logo-load
-{
-  0% {
-    fill: #0069A6;
-    stroke: #0069A6;
-  }
-  100% {
-    fill: #005A8E;
-    stroke: #005A8E;
-  }
-}
-
-@-webkit-keyframes logo-load {
-  0% {
-    fill: #0069A6;
-    stroke: #0069A6;
-  }
-  100% {
-    fill: #005A8E;
-    stroke: #005A8E;
-  }
-}
-
-.delay(@time: .2s) {
-	-webkit-animation-delay: @time;
-	   -moz-animation-delay: @time;
-	     -o-animation-delay: @time;
-	        animation-delay: @time;
-}
-
-svg polygon {
-  @time: 100ms;
-  fill: #005A8E;
-  stroke: #005a8e;
-  stroke-width: 0.25px;
-  animation: logo-load @time * 6 infinite;
-  -webkit-animation: logo-load @time * 6 infinite;
-  &:nth-child(1) {
-    .delay(@time * 6);
-  }
-  &:nth-child(2) {
-    .delay(@time * 5);
-  }
-  &:nth-child(3) {
-    .delay(@time * 4);
-  }
-  &:nth-child(4) {
-    .delay(@time * 3);
-  }
-  &:nth-child(5) {
-    .delay(@time * 2);
-  }
-  &:nth-child(6) {
-    .delay(@time * 1);
-  }
 }
 </style>
 <!--[if lt IE 9]>
@@ -135,14 +69,6 @@ svg polygon {
 <title>Modernize - Studio Web</title>
 </head>
 <body>
-<svg width="256px" height="256px" viewBox="0 0 48 48" id="loading">
-			<polygon fill="#0069A6" points="24,35.5595703 24,47.2900391 4,35.5898438 4,35.5498047 14.0297852,29.7597656"/>
-			<polygon fill="#006199" points="44,35.5498047 44,35.5898438 24,47.2900391 24,35.5595703 33.9697266,29.7597656"/>
-			<polygon fill="#00598C" points="44,12.4501953 44,35.5498047 33.9697266,29.7597656 34,29.7402344 34,18.2299805"/>
-			<polygon points="44,12.3100586 44,12.4501953 34,18.2299805 34,18.1601563 24,12.3398438 24,0.6098633"/>
-			<polygon points="24,0.6098633 24,12.3398438 14,18.1601563 14,18.2299805 4,12.4501953 4,12.3100586"/>
-			<polygon points="14.0297852,29.7597656 4,35.5498047 4,12.4501953 14,18.2299805 14,29.7402344"/>
-</svg>
 <div id="main">
 <img src="http://dinomodas.com.br/v2/wp-content/themes/Dino%20Modas/images/logo-modernizer.svg">
 <h1> Modernize</h1>
